@@ -1,0 +1,532 @@
+@media (min-width: 1581px) {
+   .container {
+      background-color: rgb(28, 30, 28);
+      height: 94%;
+      margin-top: 3%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+   }
+   .store-rating {
+      width: 140vh;
+      margin: 3% auto 0;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: space-between;
+
+   }
+   .button-block {
+      position: absolute;
+      margin-top: 6.5%;
+      right: 0;
+      margin-right: 40.7vh;
+   }
+   .block-1 {
+      background: #fff;
+      width: 40%;
+      padding-left: 4px;
+      padding-right: 4px;
+      height: 6vh;
+      border-radius: 5px;
+      text-align: left;
+      margin-left: 8%;
+      display: flex;
+   }
+   .block-2 {
+      background: #fff;
+      width: 40%;
+      padding-left: 4px;
+      padding-right: 4px;
+      height: 6vh;
+      border-radius: 5px;
+      text-align: left;
+      margin-right: 8%;
+      display: flex;
+   }
+   #input-box {
+      flex: 1;
+      border: none; 
+      outline: none;
+      padding: 8px;
+      font-size: 16px;
+      border-radius: 0;
+      font-weight: bold;
+   }
+
+   .mean-rating {
+      background: #fff;
+      width: 100%; 
+      font-size: 16px;
+      border-radius: 5px;
+      text-align: left;
+      padding-left: 8px;
+      margin-top: 20px;
+      font-weight: bold;
+    
+   }
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1580px) {
+   .container {
+      background-color: rgb(28, 30, 28);
+      height: 93%;
+      margin-top: 3.4%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+   }
+   .store-rating {
+      width: 140vh;
+      margin: 2% auto 0;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: space-between;
+
+   }
+   .button-block {
+      position: absolute;
+      margin-top: 6%;
+      right: 0;
+      margin-right: 16.9%;
+   }
+
+   .block-1 {
+      background: #fff;
+      width: calc(50% - 5px);
+      padding: 4px;
+      height: 6vh;
+      border-radius: 5px;
+      text-align: left;
+      margin-right: 2vh;
+      display: flex;
+   }
+   .block-2 {
+      background: #fff;
+      width: calc(50% - 5px);
+      padding: 4px;
+      height: 6vh;
+      border-radius: 5px;
+      text-align: left;
+      margin-right: 2vh;
+      display: flex;
+   }
+   #input-box {
+      flex: 1; 
+      border: none;
+      outline: none;
+      padding: 8px 14px 0px 8px;
+      font-size: 16px;
+      border-radius: 0;
+      /* font-weight: bold; */
+      /* color: #ccc; */
+   }
+
+   .mean-rating {
+      background: #fff;
+      width: 100%; 
+      font-size: 16px;
+      border-radius: 5px;
+      text-align: left;
+      padding-left: 8px;
+      /* font-weight: bold; */
+    
+   }
+
+}
+
+button {
+   padding: 10px 20px;
+   background-color: #007bff;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+
+/*---------------------     Лист продуктов      ------------------------ */
+@media (min-width: 1581px) {
+   .list_of_products {
+      width: 80vh;
+      margin-top: 24vh;
+      max-height: 47vh;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-left: 5vh;
+      background: #fff;
+      border-radius: 5px;
+   }
+
+   .list-item {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .list-item:not(:last-child) {
+      margin-bottom: 10px;
+   }
+
+   .product-name {
+      font-weight: bold;
+   }
+
+   .product-rating {
+      color: rgb(221, 25, 18);
+   }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1580px) {
+   .list_of_products {
+      width: 80vh;
+      margin-top: 24vh;
+      max-height: 47vh;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-left: 5vh;
+      background: #fff;
+      border-radius: 5px;
+   }
+
+   .list-item {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .list-item:not(:last-child) {
+      margin-bottom: 10px;
+   }
+
+   .product-name {
+      font-weight: bold;
+   }
+
+   .product-rating {
+      color: rgb(221, 25, 18);
+   }
+}
+
+
+/*----------------- надо будет обдумать насчёт этого пункта ------------------*/
+
+.footer {
+   background-color: rgb(255, 210, 48);
+   color: #ffffff;
+   text-align: center;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 10vh;
+}
+
+.footer .image {
+   width: 80px;
+   height: auto;
+}
+
+.image-text-container {
+   background-color: rgb(255, 210, 48);
+   position: absolute;
+   display: flex;
+   height: 12vh;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   align-items: center;
+
+}
+
+/* Стили для изображения */
+.image-1 {
+   width: 24px;
+   height: 20px;
+   margin-left: 50%;
+}
+
+.image-2 {
+   width: 90px;
+   height: 30px;
+   margin-left: 2vh;
+}
+
+.title-talent_hib {
+   margin-left: 0.5vh;
+}
+
+/*----------------------------------------------------------*/
+
+/*            Cписок отзывов              */
+
+
+
+@media (min-width: 1581px) {
+   .feedbacks {  
+      position: absolute;
+      width: 80vh;
+      max-height: 54.5vh;
+      border: 1px solid #ccc;
+      padding: 10px;
+      overflow-y: scroll;
+      background: #fff;
+      border-radius: 2px;
+      margin-right: 5vh;
+      right: 0;
+      top: 0;
+      margin-top: 24vh;
+   }
+
+   .item-feedback {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: left;
+      display: flex;
+   }
+
+   .item-feedback:not(:last-child) {
+      margin-bottom: 10px;
+   }
+
+   .feedback-text {
+      font-weight: bold;
+   }
+   .loading-message {
+      background-color: #fff;
+      width: 77.9vh;
+      padding: 20px;
+      height: 52.4vh;
+      text-align: center;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: absolute;
+      top: 0;
+      margin-top: 24vh;
+      right: 0;
+      margin-right: 5vh;
+    }
+    .title-message {
+      margin-top: 30%;
+      font-size: 50px;
+      font-weight: bold;
+
+    }
+
+    .helper-show {
+      background-color: #bc9a14;
+      width: 15%;
+      padding: 20px;
+      height: 12%;
+      text-align: center;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: absolute;
+      top: 0;
+      margin-top: 27%;
+      margin-left: 5vh;
+    }
+    .title-helper {
+      text-align: left;
+      font-weight: bold;
+    }
+    .r5-circle {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background-color: green;
+      border-radius: 50%;
+      margin-left: 5px; 
+    }
+    .r4-circle {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background-color: rgb(128, 94, 0);;
+      border-radius: 50%;
+      margin-left: 5px; 
+    }
+    .r3-circle {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background-color: rgb(26, 34, 125);
+      border-radius: 50%;
+      margin-left: 5px; 
+    }
+    .r2-circle {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background-color: rgb(0, 0, 0);
+      border-radius: 50%;
+      margin-left: 5px; 
+    }
+    .r1-circle {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background-color: red;
+      border-radius: 50%;
+      margin-left: 5px; 
+    }
+
+
+
+
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1580px) {
+   .feedbacks {
+      position: absolute;
+      width: 80vh;
+      max-height: 54.5vh;
+      border: 1px solid #ccc;
+      padding: 10px;
+      overflow-y: scroll;
+      background: #fff;
+      border-radius: 2px;
+      margin-right: 5vh;
+      right: 0;
+      top: 0;
+      margin-top: 24vh;
+
+   }
+
+   .item-feedback {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: left;
+      display: flex;
+   }
+
+   .item-feedback:not(:last-child) {
+      margin-bottom: 10px;
+   }
+
+   .feedback-text {
+      font-weight: bold;
+   }
+
+   .loading-message {
+      background-color: #fff;
+      width: 37.55%;
+      padding: 20px;
+      height: 40%;
+      text-align: center;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: absolute;
+      top: 0;
+      margin-top: 11.65%;
+      right: 0;
+      margin-right: 5vh;
+      
+    }
+    .title-message {
+      margin-top: 20%;
+      font-weight: bold;
+      font-size: 50px;
+    }
+
+    .helper-show {
+      background-color: #bc9a14;
+      width: 37.55%;
+      padding: 20px;
+      height: 14%;
+      text-align: center;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: absolute;
+      top: 0;
+      margin-top: 30.51%;
+      margin-left: 5vh;
+    }
+    .title-helper {
+      text-align: left;
+    }
+    .r5-circle {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background-color: green;
+      border-radius: 50%;
+      margin-left: 5px; 
+    }
+    .r4-circle {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background-color: rgb(128, 94, 0);;
+      border-radius: 50%;
+      margin-left: 5px; 
+    }
+    .r3-circle {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background-color: rgb(26, 34, 125);
+      border-radius: 50%;
+      margin-left: 5px; 
+    }
+    .r2-circle {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background-color: rgb(0, 0, 0);
+      border-radius: 50%;
+      margin-left: 5px; 
+    }
+    .r1-circle {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background-color: red;
+      border-radius: 50%;
+      margin-left: 5px; 
+    }
+
+}
+
+
+.positive-mark {
+   color: green;
+ }
+.middle-mark{
+   color: rgb(128, 94, 0);
+} 
+
+.satisfactory-mark{
+   color: rgb(26, 34, 125);
+}
+
+.bad-mark{
+   color: rgb(0, 0, 0);
+}
+
+.negative-mark {
+   color: red;
+}

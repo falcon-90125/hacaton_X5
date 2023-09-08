@@ -1,0 +1,56 @@
+<div class="container">
+
+   <div class="store-rating">
+      <div class="block-1">
+         <input [(ngModel)]="searchQuery" (keydown.enter)="executeSearchOnEnter()" type="text" id="input-box" placeholder="Адрес магазина" autocomplete="off">
+      </div>
+      <div class="block-2">
+         <p class="mean-rating">Общий рейтинг, среднее значение: {{mean_rating}}</p>
+      </div>
+   </div>
+   <div class="button-block">
+      <button type="submit" (click)="post_data()" >загрузка данных</button>
+   </div>
+
+   <div class="list_of_products">   
+      <div class="list-item">
+         <span class="product-name">Отзывы с рейтингом 5</span>
+         <span class="product-rating">кол-во: {{count_m5}}</span>
+      </div>
+      <div class="list-item">
+         <span class="product-name">Отзывы с рейтингом 4</span>
+         <span class="product-rating">кол-во: {{count_m4}}</span>
+      </div>
+      <div class="list-item">
+         <span class="product-name">Отзывы с рейтингом 3</span>
+         <span class="product-rating">кол-во: {{count_m3}}</span>
+      </div>      
+      <div class="list-item">
+         <span class="product-name">Отзывы с рейтингом 2</span>
+         <span class="product-rating">кол-во: {{count_m2}}</span>
+      </div>
+      <div class="list-item">
+         <span class="product-name">Отзывы с рейтингом 1</span>
+         <span class="product-rating">кол-во: {{count_m1}}</span>
+      </div>
+   </div>   
+
+   <div class="loading-message" *ngIf="!dataLoaded">
+      <div class="title-message">Загрузите данные...</div>
+   </div>
+   <div class="feedbacks" *ngIf="dataLoaded">
+      <div *ngFor="let feedbac of feedbacks" class="item-feedback">
+         <span class="feedback-text" [ngClass]="{'positive-mark': feedbac.mark == 5,'middle-mark':feedbac.mark == 4, 'satisfactory-mark': feedbac.mark == 3 , 'bad-mark': feedbac.mark == 2, 'negative-mark': feedbac.mark == 1}"> {{feedbac.text}} </span>
+      </div>
+   </div>
+
+   <div class="helper-show">
+      <div class="title-helper">Отзывы с рейтингом 5<span class="r5-circle"></span></div>
+      <div class="title-helper">Отзывы с рейтингом 4<span class="r4-circle"></span></div>
+      <div class="title-helper">Отзывы с рейтингом 3<span class="r3-circle"></span></div>
+      <div class="title-helper">Отзывы с рейтингом 2<span class="r2-circle"></span></div>
+      <div class="title-helper">Отзывы с рейтингом 1<span class="r1-circle"></span></div>
+   </div>
+
+</div>
+

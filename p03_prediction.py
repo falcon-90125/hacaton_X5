@@ -19,23 +19,23 @@ def prediction_list(shop_reviews):
     with open('input/tokenizer.pickle', 'rb') as handle:
         tokenizer = pickle.load(handle)
 
-    maxWordsCount = 25000
+    maxWordsCount = 25000 # Размер словаря tokenizer'а
 
-    #    Преобразуем проверочную выборку
+    # Преобразуем верификационную выборку в BOW
     shop_reviews_text = shop_reviews.text.tolist()
-    testFinWordIndexes = tokenizer.texts_to_sequences(shop_reviews_text) # Обучающие тесты в индексы
+    testFinWordIndexes = tokenizer.texts_to_sequences(shop_reviews_text) # Тексты в индексы
 
-    test = np.empty((0, maxWordsCount)) # Обучающая
+    test = np.empty((0, maxWordsCount)) # Заготовка под верификационную выборку
     for i in range(len(testFinWordIndexes)):
         arr_token = tokenizer.sequences_to_matrix(np.array([testFinWordIndexes[i]]).tolist())
-        test = np.concatenate((test, arr_token), axis=0)
+        test = np.concatenate((test, arr_token), axis=0) # Готовая верификационная выборка
 
-    id_address = pd.read_excel('parsing_files/shops_rates.xlsx', usecols=['id', 'address'])
-    shop_id = shop_reviews.id[0] #Берём id магазина
+    id_address = pd.read_excel('parsing_files/shops_rates.xlsx', usecols=['id', 'address']) # 
+    shop_id = shop_reviews.id[0] # Берём id магазина
     shop_address = id_address.address[id_address.index[id_address.id == shop_id][0]] #Берём адрес по id
     
     # Загрузка архитектуры и весов нейронной сети
-    model = load_model('input/model.h5') # Размер будет порядка 50Mb, возможно побольше...
+    model = load_model('input/model.h5')
 
     #Собираем список для подачи в сервис
     prediction = []
@@ -44,7 +44,7 @@ def prediction_list(shop_reviews):
     shop_address = id_address.address[id_address.index[id_address.id == shop_id][0]] #Берём адрес по id
     prediction.append([shop_id, shop_address])
 
-    #Проходим по всем классам
+    #Проходим по всем строкам df shop_reviews
     for i in range(len(shop_reviews)):
         #Получаем результаты распознавания класса
         currPred = model.predict(test[[i]])

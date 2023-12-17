@@ -2,8 +2,8 @@
 ## Кейс от X5 Group по созданию Customer Feedback Platform
 ### Сервис сбора отзывов о магазинах компаний в сети интернет из всевозможных источников, их обработка и выявления проблемных мест.
 
-![Screenshot_1.jpg](images\Screenshot_1.jpg)
+![Screenshot_1.jpg](https://github.com/falcon-90125/hackathon_ITMO_X5/blob/main/images/Screenshot_1.jpg)
 ---
-![Screenshot_2.jpg](images\Screenshot_2.jpg)
+![Screenshot_2.jpg](https://github.com/falcon-90125/hackathon_ITMO_X5/blob/main/images/Screenshot_2.jpg)
 ---
-![Screenshot_3.jpg](images\Screenshot_3.jpg)
+![Screenshot_3.jpg](https://github.com/falcon-90125/hackathon_ITMO_X5/blob/main/images/Screenshot_3.jpg)
